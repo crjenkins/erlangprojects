@@ -1,5 +1,5 @@
 -module(process).
--export([start/0, ping/1, pong/0]).
+-export([start_pong/0, start_ping/1, ping/2, pong/0]).
 
 ping(0, Pong_Node)->
     {pong, Pong_Node}  ! finished,
